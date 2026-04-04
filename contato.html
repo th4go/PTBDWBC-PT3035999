@@ -4,19 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>dwba4-semana-04-PT3035999</title>
+    <title>dwba4-PT3035999</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 </head>
+
+<header id="header">
+    <nav>
+        <p style="text-align: end;"> 
+            <a href="index.html">HOME</a> |
+            <A href="eventos.html">EVENTOS</A> |
+            <A href="contato.html">CONTATO</A> | 
+            <A href="sobre.html">SOBRE</A> |
+            <A href="login.html">ENTRAR</A>
+        </p>
+    </nav>
+</header>        
+
 <body>
-    <header id="header">
-        <nav>
-            <p style="text-align: end;"> 
-                <a href="dwba4-semana-04-pt3035999.html">HOME</a> | 
-                <A href="contato.html">CONTATO</A> | 
-                <A href="sobre.html">SOBRE</A>
-            </p>
-        </nav>
-    </header>
+    <div>
+        <img src="imgs/Logo.jpg" alt=""> 
+    </div>
+
+    <h1>Mande uma mensagem</h1>
+
+    <form action="">
+        <ul>
+            <li>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name">
+            </li>
+            <li>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </li>
+            <li>
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+            </li>
+            <li>
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                </select>
+            </li>
+            <li>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message"></textarea>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Opções de Resposta</legend>
+                    <input type="checkbox" id="email_resp" name="opc_resp" value="email">
+                    <label for="email_resp">E-mail</label>
+                    <input type="checkbox" id="phone_resp" name="opc_resp" value="phone">
+                    <label for="phone_resp">Telefone</label>
+                </fieldset>
+            </li>
+            <li>
+                <button type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+
+    <div style="margin-top: 20px;">
+        <a href="https://www.facebook.com/ifsppirituba" target="_blank"><img src="imgs/facebook.png" alt="" height="50px"></a>
+    </div>
+
+    <footer>
+        <p>IFSP - Campus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP Contato: (011) 2504-0100</p>
+    </footer>
 
 </body>
 </html>
