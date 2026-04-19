@@ -1,0 +1,181 @@
+.navbar {
+    background-color: #333333; 
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.navbar .col:last-child {
+    margin-left: auto;
+}
+
+.navbar .col:hover {
+    background-color: red;
+    cursor: pointer; 
+}
+
+
+
+.navbar .col a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    min-width: auto;
+}
+
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    background-color: #e7e7e7;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+
+.dropdown-menu a {
+    color: #000000;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: red;
+}
+
+.link-sobre {
+    margin-left: auto;
+}
+
+#logo_if {
+    display: flex;
+    justify-content: left;
+    background-color: darkgreen;
+}
+
+#palestra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#palestra h1{
+    text-align: center;
+}
+
+#palestra img{
+    margin: 0 auto;
+    width: 700px;
+    height: 450px;
+    border-radius: 100%;
+}
+
+#palestra p{
+    border: dotted 1px black;
+    text-align: center;
+    font-size: 13pt;
+    font-family: Arial, sans-serif;
+}
+
+#palestra iframe{
+    margin: 20px auto;
+    display: block;
+    width: 680px;
+    height: 400px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #cccccc; 
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+input[type=email], input[type=tel], input[type=url], textarea{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #cccccc; 
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+button[type=submit], button[type=reset] {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forms {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px; /* Define o "respiro" interno de todas as caixas cinzas */
+    margin-top: 10px; /* Dá o espaço entre as caixas */
+    background-color: #e9e9e9;
+}
+
+/* Opcional: Para alinhar as caixas de texto de Usuário e Senha */
+.forms label {
+    display: inline-block;
+    width: 60px; /* Deixa os textos com a mesma largura */
+}
+
+/* O botão Verde */
+.forms input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* O segredo para o Link ficar bonito embaixo do botão */
+.link-senha {
+    display: block; /* Força o link a ir para a linha de baixo do botão */
+    margin-top: 10px; /* Cria um espacinho entre o botão verde e o texto */
+    font-size: 14px;
+    color: #0000EE; /* Cor azul padrão de link, mude se precisar */
+}

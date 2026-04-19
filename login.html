@@ -6,36 +6,64 @@
     
     <title>dwba4-PT3035999</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body> 
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="row">
+                    <div class="col">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <div class="col">
+                        <a href="eventos.html">EVENTOS</a>
+                    </div>
+                    <div class="col">
+                        <a href="contato.html">CONTATO</a>
+                    </div>
+                    <div class="col dropdown">
+                        <a>CURSOS</a>
+                            <div class="dropdown-menu">
+                                <a href="pages-cursos/ads.html">Análise e Desenvolvimento de Sistemas</a>
+                                <a href="pages-cursos/eng-prod.html">Engenharia de Produção</a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <a href="login.html" id="entrar_btn">ENTRAR</a>
+                    </div>
+                    <div class="col">
+                        <a href="sobre.html" class="link-sobre">SOBRE</a>
+                    </div>
+                </div>
+            </nav>
+        </div>   
+    </header>
 
-<header id="header">
-    <nav>
-        <p style="text-align: end;"> 
-            <a href="index.html">HOME</a> |
-            <A href="eventos.html">EVENTOS</A> |
-            <A href="contato.html">CONTATO</A> | 
-            <A href="sobre.html">SOBRE</A> |
-            <A href="login.html">ENTRAR</A>
-        </p>
-    </nav>
-</header>   
 
-<body>  
-    <div>
-        <img src="imgs/Logo.jpg" alt=""> 
+    <div class="container" id="logo_if">
+        <div>
+            <img src="imgs/Logo.jpg" alt=""> 
+        </div>
     </div>
 
     <h1>Entrar</h1>
 
     <form action="">
-        <label for="user">Usuário:</label>
-        <input type="text" id="user" name="user" required><br><br>
+        <div class="forms">
+            <label for="user">Usuário:</label>
+            <input type="text" id="user" name="user" required>
+        </div>
+        
+        <div class="forms">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" value="Entrar">
-        <a href=""><p>Esqueci a senha</p></a>
+        <div class="forms">
+            <input type="submit" value="Entrar">
+            <a href="" class="link-senha">Esqueci a senha</a>
+        </div>
     </form>
 
     <div style="margin-top: 20px;">

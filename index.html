@@ -4,69 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>dwba4-semana-05-PT3035999</title>
+    <title>dwba4-PT3035999</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<header id="header">
-        <nav>
-            <p style="text-align: end;"> 
-                <a href="index.html">HOME</a> |
-                <A href="eventos.html">EVENTOS</A> |
-                <A href="contato.html">CONTATO</A> | 
-                <A href="sobre.html">SOBRE</A> |
-                <A href="login.html">ENTRAR</A>
-            </p>
-        </nav>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="row">
+                    <div class="col">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <div class="col">
+                        <a href="eventos.html">EVENTOS</a>
+                    </div>
+                    <div class="col">
+                        <a href="contato.html">CONTATO</a>
+                    </div>
+                    <div class="col dropdown">
+                        <a>CURSOS</a>
+                            <div class="dropdown-menu">
+                                <a href="pages-cursos/ads.html">Análise e Desenvolvimento de Sistemas</a>
+                                <a href="pages-cursos/eng-prod.html">Engenharia de Produção</a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <a href="login.html" id="entrar_btn">ENTRAR</a>
+                    </div>
+                    <div class="col">
+                        <a href="sobre.html" class="link-sobre">SOBRE</a>
+                    </div>
+                </div>
+            </nav>
+        </div>   
     </header>
 
-<body>
-    <div>
-        <img src="imgs/Logo.jpg" alt=""> 
-    </div>
 
-    <div>
-        <b><p style="font-family: Times New Roman;">Cursos</p></b>
-        <ul>
-            <li><a href="pages-cursos/ads.html">Análise e Desenvolvimento de Sistemas</a></li>
-            <li><a href="pages-cursos/eng-prod.html">Engenharia de Produção</a></li>
-            <li><a href="pages-cursos/gestao-ti.html">Gestão em Tecnologia da Informação</a></li>
-            <li><a href="pages-cursos/letras.html">Letras</a></li>
-            <li><a href="pages-cursos/gestao-publica.html">Gestão Pública</a></li>
-        </ul>
-    </div>    
-
-    <div>
-        <b><p style="font-family: Times New Roman;">Eventos</p></b>
+    <div class="container" id="logo_if">
+        <div>
+            <img src="imgs/Logo.jpg" alt=""> 
+        </div>
     </div>
     
-    <div style="margin-left: 2%;">
-        <img src="imgs/SEJA_RARO.jpg" alt="" height="230px">
-        <p style="margin-top: 0px;">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+    
+    <div class="container" id="palestra">
+        <h1>Acontece no IFSP!</h1>
+        <img src="imgs/SEJA_RARO.jpg" alt="">  
+        <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+        <h1>Conheça os desafios de inovação</h1>
+        <iframe src="https://www.youtube.com/embed/5g5LQe3m8Po" title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <div>
-        <h2>Sobre a Biblioteca</h2>
-        <img src="imgs/library.jpeg" alt="">
-        <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
-        <b><p style="font-size: 60%;">Publicado: Quarta-feira, 14 de agosto de 2019</p></b>
-    </div>
-
-    <div>
-        <h2>Conheça o SUAP</h2>
-        <div style="border: 2px black solid; height: 400px; width: 650px; position: relative;">
-            <iframe style="margin: 4%;" width="600" height="350" src="https://www.youtube.com/embed/yVbOcB1ryh0" 
-                title="Tutorial de Acesso  - SUAP 1" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-        </div>
-        
-    </div>
+    
     
     <div style="margin-top: 20px;">
-        <a href="#header"><img src="imgs/MoveTop.png" alt="" height="50px"></a><br>
         <a href="https://www.facebook.com/ifsppirituba" target="_blank"><img src="imgs/facebook.png" alt="" height="50px"></a>
     </div>
 
