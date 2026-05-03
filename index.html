@@ -10,37 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <div class="row">
-                    <div class="col">
-                        <a href="index.html">HOME</a>
-                    </div>
-                    <div class="col">
-                        <a href="eventos.html">EVENTOS</a>
-                    </div>
-                    <div class="col">
-                        <a href="contato.html">CONTATO</a>
-                    </div>
-                    <div class="col dropdown">
-                        <a>CURSOS</a>
-                            <div class="dropdown-menu">
-                                <a href="pages-cursos/ads.html">Análise e Desenvolvimento de Sistemas</a>
-                                <a href="pages-cursos/eng-prod.html">Engenharia de Produção</a>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <a href="login.html" id="entrar_btn">ENTRAR</a>
-                    </div>
-                    <div class="col">
-                        <a href="sobre.html" class="link-sobre">SOBRE</a>
-                    </div>
-                </div>
-            </nav>
-        </div>   
-    </header>
 
+    <div id="navbar-placeholder"></div>
 
     <div class="container" id="logo_if">
         <div>
@@ -48,16 +19,39 @@
         </div>
     </div>
     
-    
-    <div class="container" id="palestra">
-        <h1>Acontece no IFSP!</h1>
-        <img src="imgs/SEJA_RARO.jpg" alt="">  
-        <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
-        <h1>Conheça os desafios de inovação</h1>
-        <iframe src="https://www.youtube.com/embed/5g5LQe3m8Po" title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <img src="/imgs/eleicoes.jpg" alt="">
+                <p><b>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</b> <br>
+                Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+            </div>
+            <div class="col-2">
+                <img src="/imgs/snct.jpg" alt="">
+                <p><b>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</b> <br>
+                Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="/imgs/residencia.png" alt="">
+                <p><b>IFSP oferece bolsa aos voluntários da Residência Pedagógica</b> <br>
+                Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+            </div>
+            <div class="col-2">
+                <img src="/imgs/maratona.jpeg" alt="">
+                <p><b>Inscrições abertas para a III Maratona InterIF</b> <br>
+                Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+            </div>
+        </div>
+        <div class="row-3">
+            <h1>Conheça os desafios de inovação</h1>
+            <iframe src="https://www.youtube.com/embed/5g5LQe3m8Po" title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 
-    
     
     <div style="margin-top: 20px;">
         <a href="https://www.facebook.com/ifsppirituba" target="_blank"><img src="imgs/facebook.png" alt="" height="50px"></a>
@@ -66,5 +60,6 @@
     <footer>
         <p>IFSP - Campus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP Contato: (011) 2504-0100</p>
     </footer>
+    <script src="componentes.js"></script>
 </body>
 </html>
