@@ -1,0 +1,84 @@
+header{
+    display: column;
+    width: 100%;
+}
+header .logo{
+    width: 100%;
+    background-color: #007f00;
+}
+.navbar {
+    background-color: #333;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+/* links padrão */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* hover */
+.navbar a:hover {
+    background-color: red;
+}
+
+
+/* joga "SOBRE" pra direita */
+.navbar .direita {
+    margin-left: auto;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+    z-index: 1000;
+}
+
+/* itens */
+.dropdown .menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* hover nos itens */
+.dropdown .menu li a:hover {
+    background: #ddd;
+}
+
+/* MOSTRA no hover */
+.dropdown:hover .menu {
+    display: block;
+}
+
+body {
+    background-color: #ffffff;
+     min-height: 100vh;
+    }
+
+.login-box {
+    width: 400px;
+    }
+
+.btn-login {
+    font-size: 1.2rem;
+    }

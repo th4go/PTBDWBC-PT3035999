@@ -6,36 +6,71 @@
     
     <title>dwba4-PT3035999</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logincss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
-<body> 
 
-    <div id="navbar-placeholder"></div>
+<header>
+    <div class="navbar">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="eventos.html">EVENTOS</a>
+            <a href="contato.html">CONTATO</a>
 
-    <div class="container" id="logo_if">
-        <div>
-            <img src="imgs/Logo.jpg" alt=""> 
-        </div>
+            <div class="dropdown">
+                <a>CURSOS</a>
+                <ul class="menu">
+                    <li><a href="../pages-cursos/ads.html">Análise e Desenvolvimento de Sistemas</a></li>
+                    <li><a href="../pages-cursos/eng-prod.html">Engenharia de Produção</a></li>
+                </ul>
+            </div>
+            <a href="login.html">ENTRAR</a>
+            <a href="about.html">SOBRE</a>
+        </nav>
     </div>
+    <div class="logo">
+        <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true" alt="Logo" id="topo">
+    </div>
+</header>
 
-    <h1>Entrar</h1>
-
-    <form action="">
-        <div class="forms">
-            <label for="user">Usuário:</label>
-            <input type="text" id="user" name="user" required>
+<body>
+    <main class="container d-flex justify-content-center align-items-center py-5">
+        <div class="login-box text-center">
+            <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/ifsp.png?raw=true" alt="Logo" width="70" class="mb-4">
+            <h1 class="mb-4">Faça login</h1>
+            <form>
+                <div class="form-floating mb-2">
+                    <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                    <label for="email">Seu email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" id="lembrar">
+                    <label class="form-check-label" for="lembrar">
+                        Lembrar de mim
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <a href="#" class="text-decoration-none">
+                        Esqueci a senha
+                    </a>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 btn-login">
+                    Login
+                </button>
+            </form>
+            <p class="text-secondary mt-5 mb-0">
+                © 2020
+            </p>
         </div>
-        
-        <div class="forms">
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-
-        <div class="forms">
-            <input type="submit" value="Entrar">
-            <a href="" class="link-senha">Esqueci a senha</a>
-        </div>
-    </form>
+    </main>
 
     <div style="margin-top: 20px;">
         <a href="https://www.facebook.com/ifsppirituba" target="_blank"><img src="imgs/facebook.png" alt="" height="50px"></a>
@@ -45,6 +80,8 @@
         <p>IFSP - Campus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP Contato: (011) 2504-0100</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="componentes.js"></script>
+    
 </body>
 </html>
